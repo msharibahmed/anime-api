@@ -12,7 +12,7 @@ router.get('/:episode', async (req, res) => {
 
         const puppeteer = require('puppeteer');
         (async () => {
-            const url = 'https://gogoanime.so/' + episodeParam //URL for stream screen for particular episoode and also to the downloading link screen epispodeParam as episode/one-piece-special-episode-1(EXAMPLE)
+            const url = 'https://gogoanime.lol/' + episodeParam //URL for stream screen for particular episoode and also to the downloading link screen epispodeParam as episode/one-piece-special-episode-1(EXAMPLE)
             const browser = await puppeteer.launch({ args: ['--no-sandbox'], headless: true });
             const page = await browser.newPage();
 

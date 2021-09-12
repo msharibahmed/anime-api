@@ -11,7 +11,7 @@ router.get('/:page', async (req, res) => {  //end point for latest episodes with
         const puppeteer = require('puppeteer');
          (async () => {
              let requireList=['Loading Please Wait....']
-            var url = 'https://gogoanime.so/?page=' + pageParam // homepage or latest realase page with pageParam as home/thepagenumber 
+            var url = 'https://gogoanime.lol/?page=' + pageParam // homepage or latest realase page with pageParam as home/thepagenumber 
             const browser = await puppeteer.launch({ args: ['--no-sandbox'],headless:true });
             const page = await browser.newPage();
 

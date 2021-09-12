@@ -1,3 +1,5 @@
+//herokuUrl: https://anime-rest-api.herokuapp.com/
+
 const express = require('express');
 const router = express.Router();
 
@@ -12,7 +14,7 @@ router.get('/:keyword', async (req, res) => {
 
         const puppeteer = require('puppeteer');
         (async () => {
-            const url = 'https://gogoanime.so//search.html?keyword=' + keywordParam //url for search result with keywordParam as search/searched text(exact searched text)
+            const url = 'https://gogoanime.lol//search.html?keyword=' + keywordParam //url for search result with keywordParam as search/searched text(exact searched text)
             const browser = await puppeteer.launch({ args: ['--no-sandbox'], headless: true });
             const page = await browser.newPage();
 

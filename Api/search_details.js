@@ -12,7 +12,7 @@ router.get('/:url', async (req, res) => {
 
         const puppeteer = require('puppeteer');
         (async () => {
-            const url = 'https://gogoanime.so/category/' + urlParam //url for about anime detail with urlParam as searchdetails/name of series with small letters and '-' at places other than letters and numbers
+            const url = 'https://gogoanime.lol/category/' + urlParam //url for about anime detail with urlParam as searchdetails/name of series with small letters and '-' at places other than letters and numbers
             const browser = await puppeteer.launch({ args: ['--no-sandbox'],headless:true });
             const page = await browser.newPage();
 
